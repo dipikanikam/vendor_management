@@ -40,13 +40,17 @@ To set up the project locally, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
+6. Create migrations
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+7. Run the application:
+ ```bash
+python manage.py runserver
+```
 
-6. Run the application:
-   \`\`\`bash
-   python app.py
-   \`\`\`
-
-7. Open a web browser and navigate to http://localhost:8000 to access the application.
+8. Open a web browser and navigate to http://localhost:8000 to access the application.
 
 ## API Endpoints
 - **Vendor List/Create:** `/api/vendors/`
